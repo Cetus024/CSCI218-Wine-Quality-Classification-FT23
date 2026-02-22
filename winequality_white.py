@@ -52,9 +52,13 @@ Target is the original quality score (integer).
 We convert it into a 3-class label for classification.
 """
 
-white = pd.read_csv('winequality-white.csv', sep =";")
-display(white.head())
-display(white.describe())
+WHITE_PATH = "data/winequality-white.csv"
+
+white = pd.read_csv(WHITE_PATH, sep=';')
+
+print("White wine dataset shape:", white.shape)
+print(white.head())
+print(white.describe())
 
 def regroup_quality(q):
   if q <= 5:
