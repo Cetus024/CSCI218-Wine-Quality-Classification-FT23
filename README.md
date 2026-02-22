@@ -10,7 +10,8 @@ This project implements wine quality classification using:
 
 ## Dataset
 Wine Quality dataset from UCI repository.
-
+Dataset source:
+https://archive.ics.uci.edu/ml/datasets/Wine+Quality
 ## Structure
 - white_wine_model.ipynb
 - red_wine_model.ipynb
@@ -22,3 +23,4 @@ scikit-learn
 numpy
 pandas
 matplotlib
+
