@@ -42,13 +42,13 @@ from sklearn.linear_model import LogisticRegression
 
 """## Load Red Wine Dataset"""
 
-RED_PATH = "wine+quality/winequality-red.csv"
+RED_PATH = "data/winequality-red.csv"
 
-red = pd.read_csv(RED_PATH, sep=";")
+red = pd.read_csv(RED_PATH, sep=';')
 
 print("Red wine dataset shape:", red.shape)
-display(red.head())
-display(red.describe())
+print(red.head())
+print(red.describe())
 
 """## Dataset description (Red wine)
 Features are physicochemical properties (e.g., acidity, sugar, chlorides).
