@@ -1,28 +1,23 @@
-# CSCI218 Wine Quality Classification
+# CSCI218 Wine Quality Classification (Red & White)
 
 ## Overview
-This project implements wine quality classification using:
+This project performs **wine quality classification** using physicochemical measurements from the UCI Wine Quality dataset.  
+The original integer quality scores are regrouped into **3 classes** for classification:
 
-- Logistic Regression
-- Random Forest
-- Multilayer Perceptron
-- Gaussian Naïve Bayes
+- **Low:** quality ≤ 5  
+- **Medium:** quality = 6  
+- **High:** quality ≥ 7  
+
+Models implemented in the notebooks:
+- **Logistic Regression**
+- **Random Forest (tuned using GridSearchCV)**
+- **Gaussian Naïve Bayes**
+
+
+---
 
 ## Dataset
-Wine Quality dataset from UCI repository.
-Dataset source:
+Wine Quality dataset (UCI Machine Learning Repository)  
+Dataset page:
+```text
 https://archive.ics.uci.edu/ml/datasets/Wine+Quality
-
-Please import the dataset before running the actual code
-## Structure
-- white_wine_model.ipynb
-- red_wine_model.ipynb
-- report.pdf
-
-## Requirements
-Python 3
-scikit-learn
-numpy
-pandas
-matplotlib
-
